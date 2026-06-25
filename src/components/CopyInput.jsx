@@ -39,3 +39,5 @@ const CopyInput = () => {
     </div>
   );
 };
+
+export default CopyInput;

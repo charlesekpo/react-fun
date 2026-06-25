@@ -1,11 +1,14 @@
-import {createPortal} from 'react-dom';
-const Popup = ({copied}) => {
-  return createPortal(
-    <section>
-        {copied && (<p>Copied to clipboard! </p>)}
-    </section>,
-    document.querySelector('#popup')
-  )
-}
+import { createPortal } from "react-dom";
 
-export default Popup
+const Popup = ({ copied }) => {
+  return createPortal(
+    copied ? (
+      <div className="popup">
+        Copied to clipboard!
+      </div>
+    ) : null,
+    document.querySelector("#popup")
+  );
+};
+
+export default Popup;

@@ -1,7 +1,9 @@
-
+import CopyInput from './components/CopyInput';
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <CopyInput />
+    </div>
   )
 }
 
